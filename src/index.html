@@ -6,7 +6,7 @@
   <title>Resume | Om Duragkar</title>
   <link href="../dist/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="overflow-x-hidden">
 	<div class="h-screen w-100 bg-indigo-100">
 		<!-- nav -->
 		<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
@@ -18,22 +18,34 @@
 				<div>
 					<ul class="flex gap-10">
 						<li class="text-xl font-medium text-slate-600 cursor-pointer hover:text-slate-800 hover:font-semibold">
-							Home
+							<a href="#">
+								Home
+							</a>
 						</li>
 						<li class="text-xl font-medium text-slate-600 cursor-pointer hover:text-slate-800 hover:font-semibold">
-							About
+							<a href="#Skills">
+								About
+							</a>
 						</li>
 						<li class="text-xl font-medium text-slate-600 cursor-pointer hover:text-slate-800 hover:font-semibold">
-							Experience
+							<a href="#experience">
+								Experience
+							</a>
 						</li>
 						<li class="text-xl font-medium text-slate-600 cursor-pointer hover:text-slate-800 hover:font-semibold">
-							Education
+							<a href="#edu">
+								Education
+							</a>
 						</li>
 						<li class="text-xl font-medium text-slate-600 cursor-pointer hover:text-slate-800 hover:font-semibold">
-							Projects
+							<a href="#projects">
+								Projects
+							</a>
 						</li>
 						<li class="text-xl font-medium text-slate-600 cursor-pointer hover:text-slate-800 hover:font-semibold">
-							Contact
+							<a href="#contact">
+								Contact
+							</a>
 						</li>
 						
 					</ul>
@@ -48,31 +60,34 @@
 		</div>
 		
 	</div>
-	<div class="">
-		<div class="container flex flex-row h-49 my-24 justify-center justify-items-center">
+	<div id="Skills">
+		<div class="container flex flex-row h-49 my-24 justify-center items-center">
 			<div class="w-1/3">
 				<div class="flex justify-center">
 					<img src="./image/me.jpg" alt="me" class="rounded-xl shadow-lg shadow-slate-300">
 				</div>
 			</div>
-
-			<div class="w-1/3 flex flex-col justify-center gap-3">
-				<span class="text-2xl font-bold"> Skills </span>
-				<p>
-					<p>Languages: C, C++, JAVA, JS, PYTHON</p>
-					<p>Frontend: HTML, CSS, JS, REACTJS, NEXTJS, REDUX</p>
-					<p>Backend: Nodejs, expressjs</p>
-					<p>Database: MongoDB</span>
-					<p>Library: MUI, BOOTSTRAP, TAILWINDCSS</p>
-				</p>
+			<div class="container shadow-xl w-1/2">
+				<div class="flex flex-col justify-center gap-3 p-3 ">
+					<span class="text-2xl font-bold text-center"> Skills </span>
+					<p>
+						<p>Languages: C, C++, JAVA, JS, PYTHON</p>
+						<p>Frontend: HTML, CSS, JS, REACTJS, NEXTJS, REDUX</p>
+						<p>Backend: Nodejs, expressjs</p>
+						<p>Database: MongoDB</span>
+							<p>Library: MUI, BOOTSTRAP, TAILWINDCSS</p>
+						</p>
+					</div>
 			</div>
 		</div>
 	</div>
-	<div class="h-96 w-100 bg-indigo-50">
+	<div class="w-100 flex flex-col" id="experience">
+		<p class="text-3xl font-semibold text-center">Experience</p>
 		<div class="container py-5">
 			<div class="border-slate-800 rounded-lg shadow-2xl w-1/2 mx-auto py-12">
 				<div class="flex flex-col gap-3 p-3">
-					<span>Hi there!</span>
+					<span class="text-xl font-medium">Full Stack Intern</span>
+					<span class="text-md font-medium text-slate-700"> Menu Cart India Pvt. Ltd. [APR-PRESENT]</span>
 					<p>
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
 						Modi cumque animi ut tempore odio, harum laborum iusto aliquid sit consequuntur quo voluptatibus molestias dolor. 
@@ -81,6 +96,130 @@
 				</div>
 			</div>
 		</div>
+		<div class="container py-5">
+			<div class="border-slate-800 rounded-lg shadow-2xl w-1/2 mx-auto py-12">
+				<div class="flex flex-col gap-3 p-3">
+					<span class="text-xl font-medium">Backend Intern</span>
+					<span class="text-md font-medium text-slate-700"> Visaero India Pvt. Ltd. [DEC-MAR]</span>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Modi cumque animi ut tempore odio, harum laborum iusto aliquid sit consequuntur quo voluptatibus molestias dolor. 
+						Tenetur sint voluptates enim minima quae!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w-100 bg-indigo-50 flex flex-col" id="edu">
+		<p class="text-3xl font-semibold text-center mt-10">Education</p>
+		<div class="container py-5">
+			<div class="border-slate-800 rounded-lg shadow-2xl w-1/2 mx-auto py-12">
+				<div class="flex flex-col gap-3 p-3">
+					<span class="text-xl font-medium">Government College of Engineering, Aurangabad</span>
+					<span class="text-md font-medium text-slate-700">AY 2020-24 [8.99 GPA]</span>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Modi cumque animi ut tempore odio, harum laborum iusto aliquid sit consequuntur quo voluptatibus molestias dolor. 
+						Tenetur sint voluptates enim minima quae!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container py-5">
+			<div class="border-slate-800 rounded-lg shadow-2xl w-1/2 mx-auto py-12">
+				<div class="flex flex-col gap-3 p-3">
+					<span class="text-xl font-medium">Government College of Engineering, Nagpur</span>
+					<span class="text-md font-medium text-slate-700">AY 2019-20 [8.065 GPA]</span>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Modi cumque animi ut tempore odio, harum laborum iusto aliquid sit consequuntur quo voluptatibus molestias dolor. 
+						Tenetur sint voluptates enim minima quae!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container py-5">
+			<div class="border-slate-800 rounded-lg shadow-2xl w-1/2 mx-auto py-12">
+				<div class="flex flex-col gap-3 p-3">
+					<span class="text-xl font-medium">ST.XAVIERS HIGH SCHOOL, NAGPUR</span>
+					<span class="text-md font-medium text-slate-700">AY 2017-19 [89.2%]</span>
+					<span class="text-md font-medium text-slate-700">12th Science</span>
+					
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Modi cumque animi ut tempore odio, harum laborum iusto aliquid sit consequuntur quo voluptatibus molestias dolor. 
+						Tenetur sint voluptates enim minima quae!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container py-5">
+			<div class="border-slate-800 rounded-lg shadow-2xl w-1/2 mx-auto py-12">
+				<div class="flex flex-col gap-3 p-3">
+					<span class="text-xl font-medium">ST.XAVIERS HIGH SCHOOL, NAGPUR</span>
+					<span class="text-md font-medium text-slate-700">2017</span>
+					<span class="text-md font-medium text-slate-700">10th Science [9.4 GPA]</span>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Modi cumque animi ut tempore odio, harum laborum iusto aliquid sit consequuntur quo voluptatibus molestias dolor. 
+						Tenetur sint voluptates enim minima quae!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="projects">
+		<div class="container w-screen my-5">
+			<p class="text-4xl font-semibold m-10 text-center">Projects</p>
+			<div class="flex gap-10 flex-wrap w-screen justify-center">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+				<img src="./image/me.jpg"  class="border-slate-800 rounded-lg shadow-2xl">
+			</div>
+		</div>
+	</div>
+	<div class="bg-slate-700 p-3"  id="contact">
+		<p class="text-4xl text-slate-50 font-semibold m-10 text-center">Contact Form</p>
+		<div class="w-screen">
+			<div class="container flex flex-col items-center gap-5">
+				<div class="flex gap-2">
+					<p class="text-white">Name: </p>
+					<input class="border-2 border-slate-500 bg-transparent outline-0" type="text">
+				</div>
+				<div class="flex gap-2">
+					<p class="text-white">email: </p>
+					<input class="border-2 border-slate-500 bg-transparent outline-0" type="text">
+				</div>
+				<div class="flex gap-2">
+					<p class="text-white">Phone: </p>
+					<input class="border-2 border-slate-500 bg-transparent outline-0" type="text">
+				</div>
+				<button class="bg-black text-white px-3 py-1 my-2 border-0 shadow-xl rounded-sm">Contact</button>
+			</div>
+		</div>
+	</div>
+	<div class="bg-black w-100 text-white p-6">
+		<div class="container flex flex-row justify-evenly text-lg">
+			<p>
+				omaduragkar@gmail.com
+			</p>
+			<p>
+				+91-8459162509
+			</p>
+			<p>
+				&copy; Om Duragkar
+			</p>
+			<div>
+				<a>iN</a>
+				<a>FB</a>
+				<a>Twitter</a>
+			</div>
+		</div>
+
 	</div>
 </body>
 </html>
